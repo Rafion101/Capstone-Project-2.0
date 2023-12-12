@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Libre+Baskerville&family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Libre+Baskerville&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+  margin:0;
+  padding:0;
+}
+
+
+@media (min-width:650px){
+  
+
+/*TITLE*/
+
+#title-section{
+  background-color: #0a0919;
+}
+
+#container-title{
+  display:grid;
+  grid-template: 1fr/1fr;
+ 
+  padding-top:100px;
+  padding-bottom: 100px;
+  padding-left:200px;
+  padding-right: 200px;
+
+
+}
+
+.introduction{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  grid-area: 2/1/2/1;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#self-portrait{
+  grid-area: 2/2/2/2;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  height:300px;
+  border-radius: 50%;
+  padding: 0;
+  border-style: solid;
+  border-color: #FFF0CE;
+  z-index: 1;
+}
+
+/* ABOUT ME */
+
+#about-section{
+  background-color: #121130;
+}
+
+.title{
+  padding-top: 40px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+.about{
+  padding-top: 30px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+hr{
+  margin-left: 150px;
+  margin-right: 150px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFC436;
+  margin-bottom: 25px;
+}
+
+.desc-about{
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  font-size: 23px;
+  margin-bottom: 60px;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+}
+
+.hobbies{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  
+}
+
+
+
+.svg{
+  height: 40px;
+  filter: invert(72%) sepia(86%) saturate(421%) hue-rotate(383deg) brightness(200%) contrast(131%);
+  margin-left:10px;
+  margin-right: 1px;
+}
+
+.svg, .items{
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Education and experience */
+
+#experience-section{
+  background-color: #131433;
+
+}
+
+.experience{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 40px;
+}
+
+.exp-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  padding: 30px;
+}
+
+.container-title{
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin:0;
+  padding: 0;
+}
+
+.edu-content{
+  grid-area: 2/1/2/1;
+  margin-left: 20px;
+}
+
+.job{
+  grid-area: 1/2/1/2;
+}
+
+.job-content{
+  grid-area: 2/2/2/2;
+  margin-left:20px;
+}
+
+.content{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+li{
+  margin-left:25px;
+}
+
+
+/* Skills */
+
+#skills-section{
+  background-color: #121130;
+  
+}
+
+
+.skill-header{
+  padding-top: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+  padding-top:30px;
+}
+
+.skill-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap:20px;
+  padding-bottom:60px;
+}
+
+.skill-title{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.skill-name{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.skill-number{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.skill-progress{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-bar{
+  background-color: #ffc33683;
+}
+
+.skill-percent{
+  background-color: #FFC436;
+  display:block;
+  height:5px;
+  border-radius:3px;
+}
+
+.skill-illust{
+  width:90%;
+}
+
+.skill-photo{
+  width:90%;
+}
+
+.skill-html{
+  width:80%;
+}
+
+.skill-css{
+  width:80%;
+}
+
+.skill-js{
+  width: 40%;
+}
+
+.skill-python{
+  width: 60%;
+}
+
+.skill-sql{
+  width: 50%;
+}
+
+.skill-excel{
+  width: 80%;
+}
+
+.skill-bi{
+  width: 30%;
+}
+
+/* Projects */
+
+.section-projects{
+  background-color:#131433;
+
+}
+
+.project-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap:20px;
+}
+
+
+
+.project-img{
+  height: 150px;
+  float: left;
+}
+
+.project-title{
+  display: block;
+  padding-top: 4rem;
+  
+}
+
+.modrian-project{
+  grid-area: 1/1/1/1;
+  justify-content: flex-start;
+  background-color: #161441;
+  border-radius: 20px;
+}
+
+.pricing-project{
+  grid-area: 1/2/1/2;
+  background-color: #161441;
+  border-radius: 20px;
+}
+
+.tindog-project{
+  grid-area: 2/1/2/1;
+  background-color: #161441;
+  border-radius: 20px;
+}
+
+.web-agency-project{
+  grid-area: 2/2/2/2;
+  background-color: #161441;
+  border-radius: 20px;
+}
+
+/* Contact Section */
+
+.contact-section{
+  background-color: #121130;
+}
+
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+
+.contact-desc{
+  text-align: center;
+}
+
+.contact-button{
+
+  background-color: #FFC436;
+  border-style: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+  width:150px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-button:hover{
+  background-color: #fcc952;
+}
+
+
+
+}
+
+
+/* Phone size */
+@media (max-width:649px){
+
+
+/*TITLE*/
+
+#title-section{
+  background-color: #0a0919;
+}
+
+#container-title{
+  display:grid;
+  grid-template: 1fr/1fr;
+ 
+  padding-top:100px;
+  padding-bottom: 100px;
+  padding-left:35px;
+  padding-right: 35px;
+
+
+}
+
+.introduction{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  grid-area: 2/1/2/1;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#self-portrait{
+  grid-area: 2/2/2/2;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  height:200px;
+  border-radius: 50%;
+  padding: 0;
+  border-style: solid;
+  border-color: #FFF0CE;
+  z-index: 1;
+}
+
+/* ABOUT ME */
+
+#about-section{
+  background-color: #121130;
+}
+
+.title{
+  padding-top: 40px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}
+
+.about{
+  padding-top: 30px;
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+hr{
+  margin-left: 150px;
+  margin-right: 150px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFC436;
+  margin-bottom: 25px;
+}
+
+.desc-about{
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+}
+
+.hobbies{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  
+}
+
+
+
+.svg{
+  height: 40px;
+  filter: invert(72%) sepia(86%) saturate(421%) hue-rotate(383deg) brightness(200%) contrast(131%);
+  margin-left:10px;
+  margin-right: 1px;
+}
+
+.svg, .items{
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Education and experience */
+
+#experience-section{
+  background-color: #131433;
+
+}
+
+.experience{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 40px;
+}
+
+.exp-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  padding: 30px;
+}
+
+.container-title{
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin:0;
+  padding: 0;
+}
+
+.edu-content{
+  grid-area: 2/1/2/1;
+  margin-left: 20px;
+}
+
+.job{
+  grid-area: 1/2/1/2;
+}
+
+.job-content{
+  grid-area: 2/2/2/2;
+  margin-left:20px;
+}
+
+.content{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+li{
+  margin-left:25px;
+}
+
+
+/* Skills */
+
+#skills-section{
+  background-color: #121130;
+  
+}
+
+
+.skill-header{
+  padding-top: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+  padding-top:30px;
+}
+
+.skill-box{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-left: 35px;
+  margin-right: 35px;
+  gap:20px;
+  padding-bottom:60px;
+}
+
+.skill-title{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.skill-name{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.skill-number{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.skill-progress{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-bar{
+  background-color: #ffc33683;
+}
+
+.skill-percent{
+  background-color: #FFC436;
+  display:block;
+  height:5px;
+  border-radius:3px;
+}
+
+.skill-illust{
+  width:90%;
+}
+
+.skill-photo{
+  width:90%;
+}
+
+.skill-html{
+  width:80%;
+}
+
+.skill-css{
+  width:80%;
+}
+
+.skill-js{
+  width: 40%;
+}
+
+.skill-python{
+  width: 60%;
+}
+
+.skill-sql{
+  width: 50%;
+}
+
+.skill-excel{
+  width: 80%;
+}
+
+.skill-bi{
+  width: 30%;
+}
+
+/* Projects */
+
+.section-projects{
+  background-color:#131433;
+
+}
+
+.project-box{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-left: 35px;
+  margin-right: 35px;
+  gap:20px;
+}
+
+
+
+.project-img{
+  height: 150px;
+
+}
+
+.project-title{
+  display: block;
+  padding-top: 1 rem;
+  
+}
+
+.modrian-project{
+  grid-area: 1;
+  justify-content: flex-start;
+  background-color: #161441;
+  border-radius: 20px;
+}
+
+.pricing-project{
+  grid-area: 2;
+  background-color: #161441;
+  border-radius: 20px;
+}
+
+.tindog-project{
+  grid-area: 3;
+  background-color: #161441;
+  border-radius: 20px;
+}
+
+.web-agency-project{
+  grid-area: 4;
+  background-color: #161441;
+  border-radius: 20px;
+}
+
+/* Contact Section */
+
+.contact-section{
+  background-color: #121130;
+}
+
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+.contact-desc{
+  text-align: center;
+}
+
+.contact-button{
+
+  background-color: #FFC436;
+  border-style: none;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+  width:150px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-button:hover{
+  background-color: #fcc952;
+}
+
+
+}
